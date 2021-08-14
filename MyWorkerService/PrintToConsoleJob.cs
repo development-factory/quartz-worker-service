@@ -19,6 +19,7 @@ namespace MyWorkerService
 
         public Task Execute(IJobExecutionContext context)
         {
+            // Your code to execute at trigger time
             string textToLog = "PrintToConsoleJob was executed";
             _logger.LogInformation(textToLog);
             Console.WriteLine(textToLog);
